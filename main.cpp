@@ -3,12 +3,12 @@
 using namespace std;
 int main()
 {
-  adjtablelamp lamp;
-  cout<<lamp<<endl;
-  lamp.display(cout);
-  lamp.pressswitch();
-  lamp.dim();
-  lamp.dim();
-  lamp.display(cout);
+  adjtablelamp *lamp=new adjtablelamp();
+  cout<<*lamp<<endl;
+  lamp->display(cout);
+  lamp->pressswitch();
+  lamp->dim();
+  lamp->dim();
+  lamp->display(cout);
   system("pause");
 }
